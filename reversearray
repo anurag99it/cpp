@@ -1,0 +1,15 @@
+int reverse(int a[],int s,int e)
+{
+    int temp,size=e-s;
+    while(s<e)
+    {
+        temp=a[s];
+        a[s]=a[e];
+        a[e]=temp;
+        ++s;
+        --e;
+    }
+    for(int i=0;i<=size;i++)
+      cout<<" "<<a[i];
+     return 0;
+}
